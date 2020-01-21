@@ -1,9 +1,9 @@
-import { Colors } from './styles';
+import Colors from './colors';
 import { baseFontSize } from './constants';
 
 export default {
-    '$body-bg': Colors.BLANCO,
-    '$body-color': Colors.FONT_COLOR,
+    '$body-bg': 'white',
+    '$body-color': Colors.blue[5].hex,
     '$enable-gradients': false,
     '$enable-grid-classes': true,
     '$enable-hover-media-query': false,

@@ -24,6 +24,32 @@ import * as StyleUtils from './utils/styles';
 export { StyleUtils };
 
 /**
- * Atoms
+ * General
  */
-export { default as Button } from './components/atoms/Button/Button';
+export { default as Button } from './components/general/Button/Button';
+export { default as Icon } from './components/general/Icon/Icon';
+export { Paragraph, Text, Title } from './components/general/Typography/Typography';
+
+/**
+ * Layout
+ */
+
+/**
+ * Navigation
+ */
+
+/**
+ * Data Entry
+ */
+
+/**
+ * Data Display
+ */
+
+/**
+ * Feedback
+ */
+
+/**
+ * Other
+ */

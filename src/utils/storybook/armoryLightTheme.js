@@ -1,19 +1,19 @@
 /* istanbul ignore file */
 import { create } from '@storybook/theming';
-import { Colors } from '../../themes/vowaid/styles';
+import Colors from '../../themes/vowaid/colors';
 
 import armoryLogo from '../../icons/armory/armory-logo.svg';
 
 export default create({
     base: 'light',
 
-    colorPrimary: Colors.BLANCO,
-    colorSecondary: Colors.COBALT_500,
+    colorPrimary: 'white',
+    colorSecondary: Colors.blue[55].hex,
 
     // UI
-    appBg: Colors.BLANCO,
-    appContentBg: Colors.BLANCO,
-    appBorderColor: Colors.BORDER,
+    appBg: 'white',
+    appContentBg: 'white',
+    appBorderColor: Colors.grayscale[45].hex,
     appBorderRadius: 4,
 
     // Typography
@@ -21,21 +21,21 @@ export default create({
     fontCode: 'Consolas, "Liberation Mono", Menlo, Courier, monospace',
 
     // Text colors
-    textColor: Colors.FONT_COLOR,
-    textInverseColor: Colors.TITANIUM_200,
+    textColor: Colors.blue[5].hex,
+    textInverseColor: Colors.grayscale[95].hex,
 
     // Toolbar default and active colors
-    barTextColor: Colors.TITANIUM_600,
-    barSelectedColor: Colors.FONT_COLOR,
-    barBg: Colors.BLANCO,
+    barTextColor: Colors.grayscale[65].hex,
+    barSelectedColor: Colors.blue[5].hex,
+    barBg: 'white',
 
     // Form colors
-    inputBg: Colors.BLANCO,
+    inputBg: 'white',
     inputBorder: Colors.BORDER,
-    inputTextColor: Colors.FONT_COLOR,
+    inputTextColor: Colors.blue[5].hex,
     inputBorderRadius: 4,
 
     brandTitle: 'armory',
-    brandUrl: 'https://www.coxautoinc.com/',
+    brandUrl: 'https://www.vowaidfoundation.org/',
     brandImage: armoryLogo,
 });
