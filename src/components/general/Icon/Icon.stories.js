@@ -4,17 +4,18 @@ import React from 'react';
 
 // Components
 import Icon from './Icon';
+import { H1 } from '../../../index';
 import { StoryArticle, StoryHeader, StorySection } from '../../../utils/storybook/StyledStoryComponents';
-import Docs from './BUTTON.md';
+import Docs from './ICON.md';
 
 // Utils
 import { createStory } from '../../../utils/storybook/storybookUtils';
 
-createStory('Atoms|/').add('Icon', () => {
+createStory('General|/').add('Icon', () => {
   return (
     <StoryArticle>
       <StoryHeader>
-        <h1>Icon</h1>
+        <H1>Icon</H1>
       </StoryHeader>
 
       <StorySection>

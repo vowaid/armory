@@ -1,8 +1,12 @@
 import React from 'react';
-import { Button } from 'antd';
+import { Col, Row } from 'antd';
 
 import 'antd/dist/antd.css';
 
-const ArmoryButton = (props) => <Button {...props} />;
+const ArmoryCol = (props) => <Col {...props} />;
+const ArmoryRow = (props) => <Row {...props} />;
 
-export default ArmoryButton;
+export {
+  ArmoryCol as Col,
+  ArmoryRow as Row,
+};

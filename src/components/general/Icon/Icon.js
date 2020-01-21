@@ -3,6 +3,6 @@ import { Icon } from 'antd';
 
 import 'antd/dist/antd.css';
 
-const ArmoryButton = (props) => <Icon {...props} />;
+const ArmoryIcon = (props) => <Icon {...props} />;
 
-export default ArmoryButton;
+export default ArmoryIcon;

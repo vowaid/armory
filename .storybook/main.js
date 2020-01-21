@@ -1,5 +1,11 @@
 module.exports = {
-  stories: ['../src/**/*.stories.js'],
+  // stories: ['../src/**/*.stories.js'],
+  stories: [
+    '../src/stories/**/*.stories.js',
+    '../src/themes/**/*.stories.js',
+    '../src/components/general/**/*.stories.js',
+    '../src/components/layout/**/*.stories.js',
+  ],
   addons: [
     // Order determines order in GUI panel nav
     '@storybook/addon-knobs',
