@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.js": "/main.fa9e2fa55780a385ebf7.bundle.js",
+    "main.js.map": "/main.fa9e2fa55780a385ebf7.bundle.js.map",
+    "runtime~main.js": "/runtime~main.fa9e2fa55780a385ebf7.bundle.js",
+    "runtime~main.js.map": "/runtime~main.fa9e2fa55780a385ebf7.bundle.js.map",
+    "vendors~main.css": "/static/css/vendors~main.7186835b.chunk.css",
+    "vendors~main.js": "/vendors~main.fa9e2fa55780a385ebf7.bundle.js",
+    "vendors~main.css.map": "/static/css/vendors~main.7186835b.chunk.css.map",
+    "vendors~main.js.map": "/vendors~main.fa9e2fa55780a385ebf7.bundle.js.map",
+    "iframe.html": "/iframe.html",
+    "precache-manifest.8bd3015db32bd379429ce36cce7e6bec.js": "/precache-manifest.8bd3015db32bd379429ce36cce7e6bec.js",
+    "service-worker.js": "/service-worker.js",
+    "static/media/armory-logo.svg": "/static/media/armory-logo.3bae2def.svg",
+    "static/media/armory-preview.svg": "/static/media/armory-preview.425f0c51.svg",
+    "vendors~main.fa9e2fa55780a385ebf7.bundle.js.LICENSE": "/vendors~main.fa9e2fa55780a385ebf7.bundle.js.LICENSE"
+  },
+  "entrypoints": [
+    "runtime~main.fa9e2fa55780a385ebf7.bundle.js",
+    "static/css/vendors~main.7186835b.chunk.css",
+    "vendors~main.fa9e2fa55780a385ebf7.bundle.js",
+    "main.fa9e2fa55780a385ebf7.bundle.js"
+  ]
+}
