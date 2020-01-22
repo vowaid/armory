@@ -1,8 +1,8 @@
 import React from 'react';
-import { Button } from 'antd';
+import { AutoComplete } from 'antd';
 
 import 'antd/dist/antd.css';
 
-const ArmoryButton = (props) => <Button {...props} />;
+const ArmoryAutoComplete = (props) => <AutoComplete {...props} />;
 
-export default ArmoryButton;
+export default ArmoryAutoComplete;
