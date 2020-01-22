@@ -5,6 +5,7 @@ module.exports = {
     '../src/themes/**/*.stories.js',
     '../src/components/general/**/*.stories.js',
     '../src/components/layout/**/*.stories.js',
+    '../src/components/navigation/**/*.stories.js',
   ],
   addons: [
     // Order determines order in GUI panel nav

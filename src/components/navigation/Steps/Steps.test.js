@@ -1,9 +1,13 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import Button from './Button';
+import { Steps, Step } from './Steps';
 
-describe('Button Tests', () => {
-    it('should render without errors with default props', () => {
-        render(<Button />);
+describe('Steps Tests', () => {
+    it('should render Steps without errors with default props', () => {
+        render(<Steps />);
+    });
+
+    it('should render Step without errors with default props', () => {
+        render(<Step />);
     });
 });

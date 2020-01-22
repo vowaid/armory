@@ -1,8 +1,14 @@
 import React from 'react';
-import { Button } from 'antd';
+import { Steps } from 'antd';
 
 import 'antd/dist/antd.css';
 
-const ArmoryButton = (props) => <Button {...props} />;
+const { Step } = Steps;
 
-export default ArmoryButton;
+const ArmorySteps = (props) => <Steps {...props} />;
+const ArmoryStep = (props) => <Step {...props} />;
+
+export {
+  ArmorySteps as Steps,
+  ArmoryStep as Step,
+};

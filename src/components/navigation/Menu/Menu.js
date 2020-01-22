@@ -1,8 +1,16 @@
 import React from 'react';
-import { Button } from 'antd';
+import { Menu } from 'antd';
 
 import 'antd/dist/antd.css';
 
-const ArmoryButton = (props) => <Button {...props} />;
+const { Item, SubMenu } = Menu;
 
-export default ArmoryButton;
+const ArmoryMenu = (props) => <Menu {...props} />;
+const ArmorySubMenu = (props) => <SubMenu {...props} />;
+const ArmoryMenuItem = (props) => <Item {...props} />;
+
+export {
+  ArmoryMenu as Menu,
+  ArmorySubMenu as SubMenu,
+  ArmoryMenuItem as MenuItem,
+};

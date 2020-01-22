@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import Button from './Button';
+import Affix from './Affix';
 
-describe('Button Tests', () => {
+describe('Affix Tests', () => {
     it('should render without errors with default props', () => {
-        render(<Button />);
+        render(<Affix />);
     });
 });

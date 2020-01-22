@@ -3,26 +3,34 @@ import React from 'react';
 // Storybook
 
 // Components
-import Button from './Button';
+import PageHeader from './PageHeader';
+import { H1, H2 } from '../../../index';
 import { StoryArticle, StoryHeader, StorySection } from '../../../utils/storybook/StyledStoryComponents';
-import Docs from './BUTTON.md';
+import Docs from './PAGE_HEADER.md';
 
 // Utils
 import { createStory } from '../../../utils/storybook/storybookUtils';
 
-createStory('Atoms|/').add('Button', () => {
+createStory('Navigation|/').add('PageHeader', () => {
   return (
     <StoryArticle>
       <StoryHeader>
-        <h1>Button</h1>
+        <H1>PageHeader</H1>
       </StoryHeader>
 
       <StorySection>
-        <Button type="primary">Primary</Button>
-        <Button>Default</Button>
-        <Button type="dashed">Dashed</Button>
-        <Button type="danger">Danger</Button>
-        <Button type="link">Link</Button>
+        <StoryHeader>
+          <H2>Basic</H2>
+        </StoryHeader>
+
+        <PageHeader
+          style={{
+            border: '1px solid rgb(235, 237, 240)',
+          }}
+          onBack={() => null}
+          title="Title"
+          subTitle="This is a subtitle"
+        />
       </StorySection>
     </StoryArticle>
   );

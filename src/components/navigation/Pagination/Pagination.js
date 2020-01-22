@@ -1,8 +1,8 @@
 import React from 'react';
-import { Button } from 'antd';
+import { Pagination } from 'antd';
 
 import 'antd/dist/antd.css';
 
-const ArmoryButton = (props) => <Button {...props} />;
+const ArmoryPagination = (props) => <Pagination {...props} />;
 
-export default ArmoryButton;
+export default ArmoryPagination;

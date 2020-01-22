@@ -4,6 +4,7 @@ import styled from 'styled-components';
 // Storybook
 
 // Components
+import { H1 } from '../index';
 import { StoryArticle, StoryHeader, StorySection } from '../utils/storybook/StyledStoryComponents';
 import ArmoryPreview from '../icons/armory/armory-preview.svg';
 
@@ -31,7 +32,7 @@ createStory('Intro|/').add('Welcome', () => {
 
       <StorySection>
         <StoryHeader>
-          <h1>Welcome!</h1>
+          <H1>Welcome!</H1>
         </StoryHeader>
       </StorySection>
     </StoryArticle>

@@ -1,3 +1,3 @@
-# Button
+# Pagination
 
-_[Docs](https://ant.design/components/button)_
+_[Docs](https://ant.design/components/pagination)_

@@ -3,26 +3,35 @@ import React from 'react';
 // Storybook
 
 // Components
-import Button from './Button';
+import Pagination from './Pagination';
+import { H1, H2 } from '../../../index';
 import { StoryArticle, StoryHeader, StorySection } from '../../../utils/storybook/StyledStoryComponents';
-import Docs from './BUTTON.md';
+import Docs from './PAGINATION.md';
 
 // Utils
 import { createStory } from '../../../utils/storybook/storybookUtils';
 
-createStory('Atoms|/').add('Button', () => {
+createStory('Navigation|/').add('Pagination', () => {
   return (
     <StoryArticle>
       <StoryHeader>
-        <h1>Button</h1>
+        <H1>Pagination</H1>
       </StoryHeader>
 
       <StorySection>
-        <Button type="primary">Primary</Button>
-        <Button>Default</Button>
-        <Button type="dashed">Dashed</Button>
-        <Button type="danger">Danger</Button>
-        <Button type="link">Link</Button>
+        <StoryHeader>
+          <H2>Basic</H2>
+        </StoryHeader>
+
+        <Pagination defaultCurrent={1} total={50} />
+      </StorySection>
+
+      <StorySection>
+        <StoryHeader>
+          <H2>More Pages</H2>
+        </StoryHeader>
+
+        <Pagination defaultCurrent={6} total={500} />
       </StorySection>
     </StoryArticle>
   );

@@ -1,8 +1,10 @@
 import React from 'react';
-import { Button } from 'antd';
+import { Dropdown } from 'antd';
 
 import 'antd/dist/antd.css';
 
-const ArmoryButton = (props) => <Button {...props} />;
+console.log(Object.keys(Dropdown));
 
-export default ArmoryButton;
+const ArmoryDropdown = (props) => <Dropdown {...props} />;
+
+export default ArmoryDropdown;

@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import Button from './Button';
+import Dropdown from './Dropdown';
 
-describe('Button Tests', () => {
+describe('Dropdown Tests', () => {
     it('should render without errors with default props', () => {
-        render(<Button />);
+        render(<Dropdown />);
     });
 });

@@ -3,26 +3,51 @@ import React from 'react';
 // Storybook
 
 // Components
-import Button from './Button';
+import Dropdown from './Dropdown';
+import { H1, H2, Icon, Menu, MenuItem } from '../../../index';
 import { StoryArticle, StoryHeader, StorySection } from '../../../utils/storybook/StyledStoryComponents';
-import Docs from './BUTTON.md';
+import Docs from './DROPDOWN.md';
 
 // Utils
 import { createStory } from '../../../utils/storybook/storybookUtils';
 
-createStory('Atoms|/').add('Button', () => {
+const menu = (
+  <Menu>
+    <MenuItem>
+      <a target="_blank" rel="noopener noreferrer" href="http://www.alipay.com/">
+        1st menu item
+      </a>
+    </MenuItem>
+    <MenuItem>
+      <a target="_blank" rel="noopener noreferrer" href="http://www.taobao.com/">
+        2nd menu item
+      </a>
+    </MenuItem>
+    <MenuItem>
+      <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
+        3rd menu item
+      </a>
+    </MenuItem>
+  </Menu>
+);
+
+createStory('Navigation|/').add('Dropdown', () => {
   return (
     <StoryArticle>
       <StoryHeader>
-        <h1>Button</h1>
+        <H1>Dropdown</H1>
       </StoryHeader>
 
       <StorySection>
-        <Button type="primary">Primary</Button>
-        <Button>Default</Button>
-        <Button type="dashed">Dashed</Button>
-        <Button type="danger">Danger</Button>
-        <Button type="link">Link</Button>
+        <StoryHeader>
+          <H2>Basic</H2>
+        </StoryHeader>
+
+        <Dropdown overlay={menu}>
+          <a className="ant-dropdown-link" href="/#">
+            Hover me <Icon type="down" />
+          </a>
+        </Dropdown>
       </StorySection>
     </StoryArticle>
   );

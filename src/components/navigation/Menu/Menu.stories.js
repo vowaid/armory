@@ -3,26 +3,62 @@ import React from 'react';
 // Storybook
 
 // Components
-import Button from './Button';
+import { Menu, SubMenu } from './Menu';
+import { H1, H2, Icon } from '../../../index';
 import { StoryArticle, StoryHeader, StorySection } from '../../../utils/storybook/StyledStoryComponents';
-import Docs from './BUTTON.md';
+import Docs from './MENU.md';
 
 // Utils
 import { createStory } from '../../../utils/storybook/storybookUtils';
 
-createStory('Atoms|/').add('Button', () => {
+const MenuStory = createStory('Navigation|Menu');
+
+MenuStory.add('Top Navigation', () => {
+  const [current, setCurrent] = React.useState('mail');
+  const handleClick = (event) => {
+    setCurrent(event.click);
+  }
+
   return (
     <StoryArticle>
       <StoryHeader>
-        <h1>Button</h1>
+        <H1>Menu</H1>
+        <H2>Top Navigation</H2>
       </StoryHeader>
 
       <StorySection>
-        <Button type="primary">Primary</Button>
-        <Button>Default</Button>
-        <Button type="dashed">Dashed</Button>
-        <Button type="danger">Danger</Button>
-        <Button type="link">Link</Button>
+        <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal">
+          <Menu.Item key="mail">
+            <Icon type="mail" />
+            Navigation One
+          </Menu.Item>
+          <Menu.Item key="app" disabled>
+            <Icon type="appstore" />
+            Navigation Two
+          </Menu.Item>
+          <SubMenu
+            title={
+              <span className="submenu-title-wrapper">
+                <Icon type="setting" />
+                Navigation Three - Submenu
+              </span>
+            }
+          >
+            <Menu.ItemGroup title="Item 1">
+              <Menu.Item key="setting:1">Option 1</Menu.Item>
+              <Menu.Item key="setting:2">Option 2</Menu.Item>
+            </Menu.ItemGroup>
+            <Menu.ItemGroup title="Item 2">
+              <Menu.Item key="setting:3">Option 3</Menu.Item>
+              <Menu.Item key="setting:4">Option 4</Menu.Item>
+            </Menu.ItemGroup>
+          </SubMenu>
+          <Menu.Item key="alipay">
+            <a href="https://ant.design" target="_blank" rel="noopener noreferrer">
+              Navigation Four - Link
+            </a>
+          </Menu.Item>
+        </Menu>
       </StorySection>
     </StoryArticle>
   );

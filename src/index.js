@@ -39,6 +39,13 @@ export { Layout, Header, Footer, Sider, Content } from './components/layout/Layo
 /**
  * Navigation
  */
+export { default as Affix } from './components/navigation/Affix/Affix';
+export { Breadcrumb, BreadcrumbItem } from './components/navigation/Breadcrumb/Breadcrumb';
+export { default as Dropdown } from './components/navigation/Dropdown/Dropdown';
+export { Menu, MenuItem, SubMenu } from './components/navigation/Menu/Menu';
+export { default as PageHeader } from './components/navigation/PageHeader/PageHeader';
+export { default as Pagination } from './components/navigation/Pagination/Pagination';
+export { Steps, Step } from './components/navigation/Steps/Steps';
 
 /**
  * Data Entry

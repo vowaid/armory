@@ -1,3 +1,3 @@
-# Button
+# Steps
 
-_[Docs](https://ant.design/components/button)_
+_[Docs](https://ant.design/components/steps)_

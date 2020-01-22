@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import Button from './Button';
+import PageHeader from './PageHeader';
 
-describe('Button Tests', () => {
+describe('PageHeader Tests', () => {
     it('should render without errors with default props', () => {
-        render(<Button />);
+        render(<PageHeader />);
     });
 });

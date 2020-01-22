@@ -1,8 +1,8 @@
 import React from 'react';
-import { Button } from 'antd';
+import { PageHeader } from 'antd';
 
 import 'antd/dist/antd.css';
 
-const ArmoryButton = (props) => <Button {...props} />;
+const ArmoryPageHeader = (props) => <PageHeader {...props} />;
 
-export default ArmoryButton;
+export default ArmoryPageHeader;

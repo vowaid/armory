@@ -1,8 +1,8 @@
 import React from 'react';
-import { Button } from 'antd';
+import { Affix } from 'antd';
 
 import 'antd/dist/antd.css';
 
-const ArmoryButton = (props) => <Button {...props} />;
+const ArmoryAffix = (props) => <Affix {...props} />;
 
-export default ArmoryButton;
+export default ArmoryAffix;
