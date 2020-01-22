@@ -3,7 +3,7 @@ import React from 'react';
 // Storybook
 
 // Components
-import { Menu, SubMenu } from './Menu';
+import { Menu, MenuItem, MenuItemGroup, SubMenu } from './Menu';
 import { H1, H2, Icon } from '../../../index';
 import { StoryArticle, StoryHeader, StorySection } from '../../../utils/storybook/StyledStoryComponents';
 import Docs from './MENU.md';
@@ -28,14 +28,14 @@ MenuStory.add('Top Navigation', () => {
 
       <StorySection>
         <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal">
-          <Menu.Item key="mail">
+          <MenuItem key="mail">
             <Icon type="mail" />
             Navigation One
-          </Menu.Item>
-          <Menu.Item key="app" disabled>
+          </MenuItem>
+          <MenuItem key="app" disabled>
             <Icon type="appstore" />
             Navigation Two
-          </Menu.Item>
+          </MenuItem>
           <SubMenu
             title={
               <span className="submenu-title-wrapper">
@@ -44,20 +44,20 @@ MenuStory.add('Top Navigation', () => {
               </span>
             }
           >
-            <Menu.ItemGroup title="Item 1">
-              <Menu.Item key="setting:1">Option 1</Menu.Item>
-              <Menu.Item key="setting:2">Option 2</Menu.Item>
-            </Menu.ItemGroup>
-            <Menu.ItemGroup title="Item 2">
-              <Menu.Item key="setting:3">Option 3</Menu.Item>
-              <Menu.Item key="setting:4">Option 4</Menu.Item>
-            </Menu.ItemGroup>
+            <MenuItemGroup title="Item 1">
+              <MenuItem key="setting:1">Option 1</MenuItem>
+              <MenuItem key="setting:2">Option 2</MenuItem>
+            </MenuItemGroup>
+            <MenuItemGroup title="Item 2">
+              <MenuItem key="setting:3">Option 3</MenuItem>
+              <MenuItem key="setting:4">Option 4</MenuItem>
+            </MenuItemGroup>
           </SubMenu>
-          <Menu.Item key="alipay">
+          <MenuItem key="alipay">
             <a href="https://ant.design" target="_blank" rel="noopener noreferrer">
               Navigation Four - Link
             </a>
-          </Menu.Item>
+          </MenuItem>
         </Menu>
       </StorySection>
     </StoryArticle>
