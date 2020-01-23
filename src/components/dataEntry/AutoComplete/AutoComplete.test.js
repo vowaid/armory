@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import Button from './Button';
+import AutoComplete from './AutoComplete';
 
-describe('Button Tests', () => {
+describe('AutoComplete Tests', () => {
     it('should render without errors with default props', () => {
-        render(<Button />);
+        render(<AutoComplete />);
     });
 });

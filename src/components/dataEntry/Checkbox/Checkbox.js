@@ -1,8 +1,14 @@
 import React from 'react';
-import { Button } from 'antd';
+import { Checkbox } from 'antd';
 
 import 'antd/dist/antd.css';
 
-const ArmoryButton = (props) => <Button {...props} />;
+const { Group } = Checkbox;
 
-export default ArmoryButton;
+const ArmoryCheckbox = (props) => <Checkbox {...props} />;
+const ArmoryCheckboxGroup = (props) => <Group {...props} />;
+
+export {
+  ArmoryCheckbox as Checkbox,
+  ArmoryCheckboxGroup as CheckboxGroup,
+};

@@ -3,26 +3,66 @@ import React from 'react';
 // Storybook
 
 // Components
-import Button from './Button';
+import Cascader from './Cascader';
+import { H1, H2 } from '../../../index';
 import { StoryArticle, StoryHeader, StorySection } from '../../../utils/storybook/StyledStoryComponents';
-import Docs from './BUTTON.md';
+import Docs from './CASCADER.md';
 
 // Utils
 import { createStory } from '../../../utils/storybook/storybookUtils';
 
-createStory('Atoms|/').add('Button', () => {
+const options = [
+  {
+    value: 'zhejiang',
+    label: 'Zhejiang',
+    children: [
+      {
+        value: 'hangzhou',
+        label: 'Hangzhou',
+        children: [
+          {
+            value: 'xihu',
+            label: 'West Lake',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    value: 'jiangsu',
+    label: 'Jiangsu',
+    children: [
+      {
+        value: 'nanjing',
+        label: 'Nanjing',
+        children: [
+          {
+            value: 'zhonghuamen',
+            label: 'Zhong Hua Men',
+          },
+        ],
+      },
+    ],
+  },
+];
+
+const onChange = (value) => {
+  console.log(value);
+}
+
+createStory('Data Entry|/').add('Cascader', () => {
   return (
     <StoryArticle>
       <StoryHeader>
-        <h1>Button</h1>
+        <H1>Cascader</H1>
       </StoryHeader>
 
       <StorySection>
-        <Button type="primary">Primary</Button>
-        <Button>Default</Button>
-        <Button type="dashed">Dashed</Button>
-        <Button type="danger">Danger</Button>
-        <Button type="link">Link</Button>
+        <StoryHeader>
+          <H2>Basic</H2>
+        </StoryHeader>
+
+        <Cascader options={options} onChange={onChange} placeholder="Please select" />
       </StorySection>
     </StoryArticle>
   );

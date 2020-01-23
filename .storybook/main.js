@@ -6,6 +6,9 @@ module.exports = {
     '../src/components/general/**/*.stories.js',
     '../src/components/layout/**/*.stories.js',
     '../src/components/navigation/**/*.stories.js',
+    '../src/components/dataEntry/AutoComplete/**/*.stories.js',
+    '../src/components/dataEntry/Cascader/**/*.stories.js',
+    '../src/components/dataEntry/Checkbox/**/*.stories.js',
   ],
   addons: [
     // Order determines order in GUI panel nav

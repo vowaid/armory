@@ -1,8 +1,8 @@
 import React from 'react';
-import { Button } from 'antd';
+import { Cascader } from 'antd';
 
 import 'antd/dist/antd.css';
 
-const ArmoryButton = (props) => <Button {...props} />;
+const ArmoryCascader = (props) => <Cascader {...props} />;
 
-export default ArmoryButton;
+export default ArmoryCascader;

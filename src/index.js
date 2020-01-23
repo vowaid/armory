@@ -45,8 +45,8 @@ export { Steps, Step } from './components/navigation/Steps/Steps';
  * Data Entry
  */
 export { default as AutoComplete } from './components/dataEntry/AutoComplete/AutoComplete';
-// export { default as Cascader } from './components/dataEntry/Cascader/Cascader';
-// export { default as Checkbox } from './components/dataEntry/Checkbox/Checkbox';
+export { default as Cascader } from './components/dataEntry/Cascader/Cascader';
+export { Checkbox, CheckboxGroup } from './components/dataEntry/Checkbox/Checkbox';
 // export { default as DatePicker } from './components/dataEntry/DatePicker/DatePicker';
 // export { default as Form } from './components/dataEntry/Form/Form';
 // export { default as Input } from './components/dataEntry/Input/Input';

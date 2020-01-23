@@ -3,26 +3,61 @@ import React from 'react';
 // Storybook
 
 // Components
-import Button from './Button';
+import AutoComplete from './AutoComplete';
+import { H1, H2 } from '../../../index';
 import { StoryArticle, StoryHeader, StorySection } from '../../../utils/storybook/StyledStoryComponents';
-import Docs from './BUTTON.md';
+import Docs from './AUTO_COMPLETE.md';
 
 // Utils
 import { createStory } from '../../../utils/storybook/storybookUtils';
 
-createStory('Atoms|/').add('Button', () => {
+createStory('Data Entry|/').add('AutoComplete', () => {
+  const [value, setValue] = React.useState('');
+  const [dataSource, setDataSource] = React.useState([]);
+
+  const onSelect = (value) => {
+    console.log('onSelect', value);
+  };
+
+  const onSearch = searchText => {
+    setDataSource(!searchText ? [] : [searchText, searchText.repeat(2), searchText.repeat(3)]);
+  };
+
+  const onChange = value => {
+    setValue(value);
+  };
+
   return (
     <StoryArticle>
       <StoryHeader>
-        <h1>Button</h1>
+        <H1>AutoComplete</H1>
       </StoryHeader>
 
       <StorySection>
-        <Button type="primary">Primary</Button>
-        <Button>Default</Button>
-        <Button type="dashed">Dashed</Button>
-        <Button type="danger">Danger</Button>
-        <Button type="link">Link</Button>
+        <StoryHeader>
+          <H2>Basic Usage</H2>
+        </StoryHeader
+>
+        <div>
+          <AutoComplete
+            dataSource={dataSource}
+            style={{ width: 200 }}
+            onSelect={onSelect}
+            onSearch={onSearch}
+            placeholder="input here"
+          />
+          <br />
+          <br />
+          <AutoComplete
+            value={value}
+            dataSource={dataSource}
+            style={{ width: 200 }}
+            onSelect={onSelect}
+            onSearch={onSearch}
+            onChange={onChange}
+            placeholder="control mode"
+          />
+        </div>
       </StorySection>
     </StoryArticle>
   );

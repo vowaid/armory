@@ -1,9 +1,13 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import Button from './Button';
+import { Checkbox, CheckboxGroup } from './Checkbox';
 
-describe('Button Tests', () => {
-    it('should render without errors with default props', () => {
-        render(<Button />);
+describe('Checkbox Tests', () => {
+    it('should render Checkbox without errors with default props', () => {
+        render(<Checkbox />);
+    });
+
+    it('should render CheckboxGroup without errors with default props', () => {
+        render(<CheckboxGroup />);
     });
 });
