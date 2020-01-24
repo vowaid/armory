@@ -1,8 +1,18 @@
 import React from 'react';
-import { Button } from 'antd';
+import { DatePicker } from 'antd';
 
 import 'antd/dist/antd.css';
 
-const ArmoryButton = (props) => <Button {...props} />;
+const { MonthPicker, RangePicker, WeekPicker } = DatePicker;
 
-export default ArmoryButton;
+const ArmoryDatePicker = (props) => <DatePicker {...props} />;
+const ArmoryMonthPicker = (props) => <MonthPicker {...props} />;
+const ArmoryRangePicker = (props) => <RangePicker {...props} />;
+const ArmoryWeekPicker = (props) => <WeekPicker {...props} />;
+
+export {
+  ArmoryDatePicker as DatePicker,
+  ArmoryMonthPicker as MonthPicker,
+  ArmoryRangePicker as RangePicker,
+  ArmoryWeekPicker as WeekPicker,
+};

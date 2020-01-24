@@ -9,6 +9,9 @@ module.exports = {
     '../src/components/dataEntry/AutoComplete/**/*.stories.js',
     '../src/components/dataEntry/Cascader/**/*.stories.js',
     '../src/components/dataEntry/Checkbox/**/*.stories.js',
+    '../src/components/dataEntry/DatePicker/**/*.stories.js',
+    '../src/components/dataEntry/Form/**/*.stories.js',
+    '../src/components/dataEntry/Input/**/*.stories.js',
   ],
   addons: [
     // Order determines order in GUI panel nav

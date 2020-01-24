@@ -1,8 +1,8 @@
 import React from 'react';
-import { Button } from 'antd';
+import { Form } from 'antd';
 
 import 'antd/dist/antd.css';
 
-const ArmoryButton = (props) => <Button {...props} />;
+const ArmoryForm = (props) => <Form {...props} />;
 
-export default ArmoryButton;
+export default ArmoryForm;
